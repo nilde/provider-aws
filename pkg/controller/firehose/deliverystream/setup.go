@@ -1,19 +1,20 @@
+//TODO: 
+//Check if the following works and think how to implement the preUpdate Function 
+//and the missing methods
+
 package deliverystream
 
 import (
 	"context"
-	//"strings"
 
 	"github.com/aws/aws-sdk-go/aws"
 	svcsdk "github.com/aws/aws-sdk-go/service/firehose"
-	//xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
 	"github.com/crossplane/crossplane-runtime/pkg/connection"
 	"github.com/crossplane/crossplane-runtime/pkg/controller"
 	"github.com/crossplane/crossplane-runtime/pkg/event"
 	"github.com/crossplane/crossplane-runtime/pkg/meta"
 	"github.com/crossplane/crossplane-runtime/pkg/reconciler/managed"
 	"github.com/crossplane/crossplane-runtime/pkg/resource"
-	//"github.com/pkg/errors"
 	ctrl "sigs.k8s.io/controller-runtime"
 
 	svcapitypes "github.com/crossplane-contrib/provider-aws/apis/firehose/v1alpha1"
